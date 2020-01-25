@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'ABCSans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-light.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-light.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ABCSans';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-regular.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-regular.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ABCSans';
+    font-weight: 400;
+    font-style: italic;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-regularitalic.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-regularitalic.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ABCSans';
+    font-weight: bold;
+    font-style: normal;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-bold.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-bold.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ABCSans';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-black.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-black.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ABCSans Condensed';
+    font-weight: bold;
+    font-style: normal;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-boldcondensed.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-boldcondensed.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ABCSans Rounded';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-rounded.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-rounded.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ABCSans Rounded';
+    font-weight: bold;
+    font-style: normal;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-rounded_bold.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-rounded_bold.woff') format('woff');
+    font-display: swap;
+}
+/* tabular numbers */
+@font-face {
+    font-family: 'ABCSans Tabbed';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-light-tabnumbers.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-light-tabnumbers.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ABCSans Tabbed';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-regular-tabnumbers.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-regular-tabnumbers.woff') format('woff');
+    font-display: swap;
+}
+/* prettier-ignore */
+@font-face {
+    font-family: 'ABCSans Tabbed';
+    font-weight: 400;
+    font-style: italic;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-regularitalic-tabnumbers.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-regularitalic-tabnumbers.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ABCSans Tabbed';
+    font-weight: bold;
+    font-style: normal;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-bold-tabnumbers.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-bold-tabnumbers.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ABCSans Tabbed';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://res.abc.net.au/fonts/abcsans/abcsans-black-tabnumbers.woff2') format('woff2'),
+    url('https://res.abc.net.au/fonts/abcsans/abcsans-black-tabnumbers.woff') format('woff');
+    font-display: swap;
+}
+
+.static .waves img {
+    animation-duration: 6s;
+    animation-name: float;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    25% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(-180deg);
+    }
+}
+
+html { background-color: #FFF6E7; }
+body { background-color: #03141f; }
+
+body,html {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'abcsans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+header {
+    height: 200px;
+    width: 100%;
+
+    z-index: 2;
+    
+    background-image: linear-gradient(0deg, #ffffff, #bbdbfe);
+    background-color: #ddd;
+    
+    position: relative;
+    
+
+    .logo {
+        height: 150px;
+        z-index: 99;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        z-index: 3;
+        transform: translate(-50%, -50%);
+    }
+    
+    .waves {
+        overflow: hidden;    
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .waves img,
+    .last-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        object-fit: cover;
+        &:nth-child(1) {  z-index: 1; }
+        &:nth-child(2) {  z-index: 2; }
+        &:nth-child(3) {  z-index: 4; }
+        &:nth-child(4) {  z-index: 4; }
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'abcsans condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.container { max-width: 1000px;margin: 0 auto;color: white; }
+
+section { min-height: 1000px; position: relative; z-index: -1;}
+
+.fish {
+
+    position: relative;
+
+    height: 128px;
+    width: 256px;
+
+    &-container {
+        width: 600px;
+        height: 600px;
+
+        position: absolute;
+
+        left: 50%;
+        top: 100px;
+
+        // transform: translateX(-50%);
+
+        z-index: 3;
+
+        animation-duration: 6s;
+        animation-name: rotate;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    .body  { position: absolute; height: 100%; left: 0px; }
+    .back  { position: absolute; height: 100%; left: 40px;bottom: 20px; }
+    .front { position: absolute; height: 40px; right: 65px;bottom: 0px; }
+
+}
